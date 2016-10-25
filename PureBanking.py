@@ -1,5 +1,7 @@
-# To Creat New Account
-def creat_new_account():
+#!/usr/bin/python3
+
+# To Create New Account
+def create_new_account():
     print ("Your Account Number :", account_number)
     if ((len(account_number)) == max_account_number_length):
             if (account_number not in account_holders):
@@ -76,7 +78,7 @@ while True: # condition is always true
                 print("\nYou Account Number is not vaild!!\nPlease check and retry!")
                 new_option = int(input("\n** Sub Menu **\nEnter the Choice:\n1. Open New Account \n2. Exit to Main Menu and Retry\n"))
                 if (new_option == 1):
-                    creat_new_account()
+                    create_new_account()
                 else:
                     break
         else:
@@ -106,7 +108,7 @@ while True: # condition is always true
         account_number = (input("\nEnter {0} digit New Account Number: ".format(max_account_number_length)))
 
         if ((len(account_number)) == max_account_number_length):
-            creat_new_account()
+            create_new_account()
                 
         else:
             print("\nYou New Account Number is not vaild!!\nPlease try again!")

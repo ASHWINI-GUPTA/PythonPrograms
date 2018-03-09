@@ -28,22 +28,16 @@ SAMPLE OUTPUT
 
 #Create List
 elements = []
-
 value  = input()
-
 lst = value.split(" ")
-
 row = int(lst[0])
 column = int(lst[1])
 
 for i in range(row):
     #Appending list inside elements to create it multidimensional
     elements.append([])
-
-    column_values = input()
-    
+    column_values = input()   
     col_lst = column_values.split(" ")
-    
     for col in range(column):
         elements[i].append(col_lst[col])
 

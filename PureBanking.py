@@ -14,7 +14,7 @@ def create_new_account():
                 return
 
     else:
-        print("\nYou New Account Number is not vaild!!\nPlease try again!")
+        print("\nYou New Account Number is not valid!!\nPlease try again!")
         return
 
 # Deposit into Account
@@ -40,7 +40,7 @@ def withdraw():
         withdraw_amount = float(input("\nEnter the Amount to withdraw: "))
 
         if (withdraw_amount > account_holders[account_number]):
-            print("\nSoory, You are out of limit!!")
+            print("\nSorry, You are out of limit!!")
             return
         else:
             account_holders[account_number] -= withdraw_amount
@@ -64,7 +64,7 @@ while True: # condition is always true
     #print ("\nExisting Account Numbers : ", account_holders.keys())
     #print ("\nAccount Balance : ", account_holders.values())
 
-    choose = int(input("\nEnter the Choice:\n1. Deposit \n2. Withdraw \n3. To Creat New Account \n4. Exit \n")) # Make Choice
+    choose = int(input("\nEnter the Choice:\n1. Deposit \n2. Withdraw \n3. To Create New Account \n4. Exit \n")) # Make Choice
 
     if (choose == 1):
 
@@ -75,14 +75,14 @@ while True: # condition is always true
                 print ("\nYour Current Account Balance: ", account_holders[account_number])
                 deposit() #call function deposit
             else:
-                print("\nYou Account Number is not vaild!!\nPlease check and retry!")
+                print("\nYou Account Number is not valid!!\nPlease check and retry!")
                 new_option = int(input("\n** Sub Menu **\nEnter the Choice:\n1. Open New Account \n2. Exit to Main Menu and Retry\n"))
                 if (new_option == 1):
                     create_new_account()
                 else:
                     break
         else:
-            print("\nYou Account Number is not vaild!!\nPlease check and retry!")
+            print("\nYou Account Number is not valid!!\nPlease check and retry!")
             continue
 
     elif (choose == 2):
@@ -96,11 +96,11 @@ while True: # condition is always true
                 withdraw() #call function withdraw
 
             else:
-                print("\nYou Account Number is not vaild!!\nPlease check and retry!")
+                print("\nYou Account Number is not valid!!\nPlease check and retry!")
                 break
 
         else:
-            print("\nYou Account Number is not vaild!!\nPlease check and retry!")
+            print("\nYou Account Number is not valid!!\nPlease check and retry!")
             continue
 
     elif (choose == 3):
@@ -111,7 +111,7 @@ while True: # condition is always true
             create_new_account()
                 
         else:
-            print("\nYou New Account Number is not vaild!!\nPlease try again!")
+            print("\nYou New Account Number is not valid!!\nPlease try again!")
             continue
 
     else:

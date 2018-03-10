@@ -44,6 +44,6 @@ for i in range(row):
 # Printing Element in Transpose Order
 for col in range(column):
     for i in range(row):
-        print (elements[i][col], end=" ")
+        print(elements[i][col], end=" ")
     print(end="\n")
 
